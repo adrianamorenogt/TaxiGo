@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-
 * {
   font-family: 'Montserrat';
 }
@@ -15,7 +14,6 @@ body{
     padding: 100px 0;
 
 }
-
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -90,11 +88,12 @@ body{
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
+  font-weight: bold;
 }
 
 .nav-light .navbar-nav .navbar-link:focus,
 .nav-light .navbar-nav .navbar-link:hover {
-  color: #000;
+  color: #000000;
 }
 
 .w-100 {
@@ -116,6 +115,13 @@ body{
 .team .card {
   /*sup der difuminacion sombra   transparencia de la sombra*/
   box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+  height: 100%;
+
+}
+/*taxi types*/
+.card-taxi:hover{
+  border: none;
+  box-shadow: 0px 0px 30px #2a2b27af; 
 }
 
 /* iconos */
