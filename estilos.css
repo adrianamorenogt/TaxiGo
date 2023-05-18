@@ -6,9 +6,11 @@
 }
 
 body{
-    background-color: #f1fbff;
+    background-color: #bedeeb;
 }
-
+.logo{
+    width: 80%;
+}
 .section-padding{
     padding: 100px 0;
 }
@@ -129,9 +131,11 @@ box-shadow: 15px 15px 40px rgba(0, 0, 0,0.15);
     }
     /*me asigna un ancho*/
     .img-area img {
-        width: 100%;
+        width: 10%;
     }
-}
+
+
+
 @media only screen and (max-width: 767px) {
     /*me alinea los textos en la parte central*/
     .navbar-nav {
@@ -166,3 +170,4 @@ box-shadow: 15px 15px 40px rgba(0, 0, 0,0.15);
     }
 }
 
+}
