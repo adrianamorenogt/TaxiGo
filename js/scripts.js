@@ -16,7 +16,7 @@ popupWhatsApp=()=>{
     sendbtn.addEventListener("click",()=>{
         let msg=document.getElementById('whats-in').value; 
         let relmsg=msg.replace(/ /g,"%20");
-        window.open('https://wa.me/+573203989369?text='+relmsg, '_blank');
+        window.open('https://wa.me/+573166291746?text='+relmsg, '_blank');
     });
     setTimeout(() =>{
         popup.classList.toggle('is-active-whatsapp-popup');
