@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TaxiGo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="/img/logo.jpeg" alt=""></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<!-- ms-autosignifica "margin-start:auto" y se utiliza para alinear un elemento a la derecha del contenedor principal.-->
+
+				<!--mb-2" significa "margin-bottom: 2 unidades" y se utiliza para agregar un margen inferior de 2 unidades al elemento.-->
+
+				<!--"mb-lg-" significa "margin-bottom: según las reglas definidas para pantallas grandes (large)" y se utiliza para establecer un margen inferior para pantallas grandes según las reglas definidas en el archivo CSS.-->
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">Conoce  más</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Nuestros servicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Tipos de taxis</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Equipo de Desarrollo
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contáctanos</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-indicators">
+			<!--El valor "t" en "slide-t" significa "transition" (transición) y se utiliza para especificar la forma en que se desplazan los elementos en el carrusel. Los valores que pueden tener "slide-t" incluyen "fade" (desvanecimiento), "slide" (deslizamiento) y "scroll" (desplazamiento).-->
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="..." class="d-block w-100" src="img/taxi2.jpeg">
+				<div class="carousel-caption">
+					<h5>Viaja segur@, viaja tranquila@</h5>
+					<p>Comprendemos el verdadero valor de un viaje, queremos lo mejor para ti, por eso garantizamos tu seguridad.</p>
+					<!---->
+					<p><a class="btn btn-warning mt-3" href="#">Solicitar</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="..." class="d-block w-100" src="img/taxi3.jpeg">
+				<div class="carousel-caption">
+					<h5>La mejor ruta es tuya</h5>
+					<p>Sabemos que el tiempo es algo importante para tí, es por ello que buscamos las mejores rutas con inteligencia artificial, todo para tí </p>
+					<p><a class="btn btn-warning mt-3" href="#">Solcitar</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="..." class="d-block w-100" src="img/taxi4.jpeg">
+				<div class="carousel-caption">
+					<h5>Descubre</h5>
+					<p>Llega a los mejores lugares de la ciudad, pregunta por nuestro City Tour</p>
+					<p><a class="btn btn-warning mt-3" href="#">Learn More</a></p>
+				</div>
+			</div>
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div><!-- about section starts -->
+	<section class="about section-padding" id="about">
+		<div class="container">
+			<div class="row">
+				<!--col-lg-4" significa que en pantallas grandes (lg, por ejemplo, resoluciones mayores de 992 píxeles), la columna ocupará cuatro de las doce columnas totales disponibles en un contenedor.-->
+
+				<!--"col-md-12" significa que en pantallas medianas (md, por ejemplo, resoluciones entre 768 y 991 píxeles), la columna ocupará las doce columnas totales disponibles en un contenedor.-->
+
+				<!--"col-12" significa que en pantallas pequeñas (menos de 768 píxeles), la columna ocupará las doce columnas totales disponibles en un contenedor.-->
+				<div class="col-lg-4 col-md-12 col-12">
+					<div class="about-img"><img alt="" class="img-fluid" src="img/photo-1534665482403-a909d0d97c67.jpeg"></div>
+				</div>
+
+				<!--"col-lg-8": Indica que el elemento debe ocupar 8 de las 12 columnas disponibles en la rejilla de Bootstrap en dispositivos grandes (pantallas con un ancho de al menos 992 píxeles).-->
+
+				<!--"col-md-12": Indica que el elemento debe ocupar las 12 columnas disponibles en la rejilla de Bootstrap en dispositivos medianos (pantallas con un ancho de al menos 768 píxeles).-->
+
+				<!--"col-12": Indica que el elemento debe ocupar las 12 columnas disponibles en la rejilla de Bootstrap en dispositivos pequeños (pantallas con un ancho de menos de 576 píxeles).-->
+
+				<!--"ps-lg-5": Agrega un margen izquierdo (padding) de 5 espacios en dispositivos grandes (pantallas con un ancho de al menos 992 píxeles).-->
+
+				<!--"mt-md-5": Agrega un margen superior (margin) de 5 espacios en dispositivos medianos (pantallas con un ancho de al menos 768 píxeles).-->
+				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+					<div class="about-text">
+						<h2>Trabajamos por ti<br>
+						24/7</h2>
+						<p>TaxiGo tu nuevo aliado de confianza en transporte en Bogotá. Brindamos un servicio de taxis confiable, seguro y eficiente, con conductores capacitados y amigables. Tu satisfacción es nuestra prioridad. ¡Viaja con TaxiGo y disfruta de trayectos sin complicaciones en la ciudad!</p><a class="btn btn-warning" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- about section Ends -->
+	<!-- services section Starts -->
+	<section class="services section-padding" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Nuestros servicios</h2>
+						<p>Explora nuestra variedad de servicios de transporte y déjanos llevarte a tu destino de manera cómoda y segura.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-laptop"></i>
+							<h3 class="card-title">Servicio de taxi confiable</h3>
+							<p class="lead">Con TaxiGo, disfruta de un servicio de taxi confiable las 24 horas. Nuestros conductores expertos te garantizan un viaje seguro y rápido, brindándote comodidad y tranquilidad en cada trayecto.</p><button class="btn bg-warning text-dark">Solicitar taxi</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-journal"></i>
+							<h3 class="card-title">Transporte ejecutivo de primera clase</h3>
+							<p class="lead"> Descubre nuestro exclusivo servicio de transporte ejecutivo de primera clase. Viaja con estilo y comodidad en vehículos de lujo, con conductores expertos y un servicio personalizado que superará tus expectativas.</p><button class="btn bg-warning text-dark">Reserva tu Experiencia de Lujo</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-intersect"></i>
+							<h3 class="card-title">Traslados al aeropuerto sin complicaciones</h3>
+							<p class="lead">TaxiGo te brinda traslados al aeropuerto de manera puntual, eficiente y segura. Olvídate del estrés de buscar transporte y llega a tiempo y sin preocupaciones con nuestro servicio sin complicaciones.</p><button class="btn bg-warning text-dark">¡Viajar con TaxiGo!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- services section Ends -->
+	<!-- portfolio strats -->
+	<section class="portfolio section-padding" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Tipos de taxis</h2>
+						<p>Tenemos los mejores taxis para tu comodidad y tranquilidad</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/tipotaxieco.jpg"/></div>
+							<h3 class="card-title">Taxi Eco</h3>
+							<p class="lead">Taxi para 4 personas, tarifa economica desde $5.000</p><button class="btn bg-warning text-dark">Learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/tipotaxipro.jpg"></div>
+							<h3 class="card-title">Taxi Pro</h3>
+							<p class="lead">Taxi privado de 2 a 4 personas, tarifa pro desde $10.000 </p><button class="btn bg-warning text-dark">learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/tipotaxisuperpro.jpg"></div>
+							<h3 class="card-title">Taxi Super Pro</h3>
+							<p class="lead">Puedes ir solo en tu propio taxi y maximo 6 personas, es tu eleccion, tarifa super pro desde $15.000</p><button class="btn bg-warning text-dark">Learn More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- portfolio ends -->
+	<!-- team starts -->
+	<section class="team section-padding" id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Equipo de Desarrollo</h2>
+						<p>Conoce a los desarrolladores que hacen posible este proyecto</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="https://media.licdn.com/dms/image/C5603AQGWzqryiY8B2Q/profile-displayphoto-shrink_800_800/0/1539707298078?e=2147483647&v=beta&t=k1xwpd6g4Ir1jtGQROpmHMuaiOZHRJP79cfrdOks9xI">
+							<h3 class="card-title py-2">Camila Peña</h3>
+							<p class="card-text">Developer FullStack Java Junior</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="https://avatars.githubusercontent.com/u/77415169?v=4">
+							<h3 class="card-title py-2">Héctor Beltrán</h3>
+							<p class="card-text">Developer FullStack Java Junior</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="https://avatars.githubusercontent.com/u/111825505?v=4">
+							<h3 class="card-title py-2">Adriana Moreno</h3>
+							<p class="card-text">Developer FullStack Java Junior</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="https://avatars.githubusercontent.com/u/108376706?v=4">
+							<h3 class="card-title py-2">Andrea Ruiz</h3>
+							<p class="card-text">Developer FullStack Java Junior</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- team ends -->
+	<!-- Contact starts -->
+	<section class="contact section-padding" id="contact">
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Contáctanos</h2>
+						<p>¡Estamos aquí para ayudarte! Contáctanos y resolveremos tus dudas o consultas.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-0">
+				<div class="col-md-12 p-0 pt-4 pb-4">
+					<!--for getting the form download the code from download button-->
+				</div>
+			</div>
+		</div>
+	</section><!-- contact ends -->
+	<!-- footer starts -->
+	<footer class="bg-dark p-2 text-center">
+		<div class="container">
+			<p class="text-white">Todos los derechos reservados By @website Camila - Héctor - Adriana - Andrea</p>
+		</div>
+	</footer>
+	<!-- footer ends -->
+	<script src=scripts.js></script>
+</body>
+</html>
